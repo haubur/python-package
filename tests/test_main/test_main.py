@@ -3,7 +3,7 @@ import pytest
 from src.main import main
 from src.main import fibonacci
 
-class TestMainOperations:
+class TestMainOperations(object):
 
     @pytest.mark.dependency()
     def test_fibonacci_generator(self):

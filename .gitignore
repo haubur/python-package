@@ -1,1 +1,5 @@
 /venv
+.coverage
+.coveragerc
+coverage.json
+**/__pycache__/

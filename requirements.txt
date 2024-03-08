@@ -1,1 +1,6 @@
+# ---
+# Testing and coverage
+# ---
+coverage
 pytest
+pytest-dependency
