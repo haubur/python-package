@@ -3,7 +3,9 @@
 A modern python package template with professional grade best practices.
 
 ## Components
-- [ ] Build tool
+- [x] Build backend
+	- poetry (chosen to replace make if desired)
+- [x] Build tool
 	- make
 - [x]Dependency management
 	- venv
@@ -11,8 +13,8 @@ A modern python package template with professional grade best practices.
 - [ ] Linters
 - [ ] Typing
 - [ ] Auto-formatters
-- [ ] Documentation
-	- MkDocs
+- [x] Documentation
+	- MkDocs/MkDocstrings
 - [ ] Changelog
 - [x] Testing
 	- pytest
@@ -20,6 +22,7 @@ A modern python package template with professional grade best practices.
 - [ ] Pre-commit
 - [ ] CI/CD
 - [ ] LICENSE
+	- [Choose a license](https://choosealicense.com/)
 - [ ] Logging
 
 ## Infrastructure

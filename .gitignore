@@ -4,3 +4,4 @@
 coverage.json
 **/__pycache__/
 /site
+/dist

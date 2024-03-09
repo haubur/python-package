@@ -4,7 +4,24 @@ VENV_NAME := venv
 
 all: list
 
-.PHONY: install docs clean test
+.PHONY: build clean docs install test
+
+build:
+	echo "Building python package ..."
+	$(PYTHON) -m poetry build
+
+clean:
+	echo "Cleaning cache ..."
+	$(PYTHON) -m tools.path_cleaner clear-all-cache
+	@if [ -d "tests/.pytest_cache"]; then \
+		rm -r tests/.pytest_cache; \
+	fi
+
+docs:
+	echo "Building the documentation ..."
+	$(PYTHON) -m mkdocs build
+	echo "serving the documentation ..."
+	$(PYTHON) -m mkdocs serve
 
 install:
 	@if [ ! -d "$(VENV_NAME)" ]; then \
@@ -19,21 +36,6 @@ install:
 		pip install --upgrade pip && \
 		pip install -r requirements.txt; \
 	fi
-
-docs:
-	echo "Building the documentation ..."
-	$(PYTHON) -m mkdocs build
-	echo "serving the documentation ..."
-	$(PYTHON) -m mkdocs serve
-
-
-clean:
-	echo "Cleaning cache ..."
-	$(PYTHON) -m tools.path_cleaner clear-all-cache
-	@if [ -d "tests/.pytest_cache"]; then \
-		rm -r tests/.pytest_cache; \
-	fi
-
 
 test:
 	@echo "Running tests..."
