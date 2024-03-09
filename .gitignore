@@ -3,3 +3,4 @@
 .coveragerc
 coverage.json
 **/__pycache__/
+/site

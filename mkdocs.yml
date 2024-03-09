@@ -1,0 +1,17 @@
+site_name: python-package
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - 'Quick-Start':
+    - 'Model': 'main.md'
+  - 'API': 
+    - 'Block 1': api.md
+  - About:
+    - 'License': 'LICENSE.md'
+    - 'Changelog': 'CHANGELOG.md'
+
+plugins:
+  - mkdocstrings
+  - search
+
+theme: readthedocs

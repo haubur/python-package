@@ -5,7 +5,7 @@ A modern python package template with professional grade best practices.
 ## Components
 - [ ] Build tool
 	- make
-- [ ]Dependency management
+- [x]Dependency management
 	- venv
 	- requirements.txt
 - [ ] Linters
@@ -14,7 +14,8 @@ A modern python package template with professional grade best practices.
 - [ ] Documentation
 	- MkDocs
 - [ ] Changelog
-- [ ] Testing
+- [x] Testing
+	- pytest
 	- coverage
 - [ ] Pre-commit
 - [ ] CI/CD

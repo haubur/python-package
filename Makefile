@@ -4,7 +4,7 @@ VENV_NAME := venv
 
 all: list
 
-.PHONY: install clean test
+.PHONY: install docs clean test
 
 install:
 	@if [ ! -d "$(VENV_NAME)" ]; then \
@@ -19,6 +19,13 @@ install:
 		pip install --upgrade pip && \
 		pip install -r requirements.txt; \
 	fi
+
+docs:
+	echo "Building the documentation ..."
+	$(PYTHON) -m mkdocs build
+	echo "serving the documentation ..."
+	$(PYTHON) -m mkdocs serve
+
 
 clean:
 	echo "Cleaning cache ..."

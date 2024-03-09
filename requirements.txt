@@ -1,4 +1,10 @@
 # ---
+# Documentation
+# ---
+mkdocs
+mkdocstrings-python
+
+# ---
 # Testing and coverage
 # ---
 coverage
