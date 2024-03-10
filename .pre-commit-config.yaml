@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v2.3.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -12,3 +12,8 @@ repos:
       - id: mixed-line-ending
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+
+  - repo: https://github.com/ambv/black
+    rev: 24.2.0
+    hooks:
+      - id: black

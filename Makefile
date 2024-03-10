@@ -36,6 +36,7 @@ install:
 		pip install --upgrade pip && \
 		pip install -r requirements.txt; \
 	fi
+	pre-commit install --hook-type pre-commit
 
 test:
 	@echo "Running tests..."
@@ -56,4 +57,3 @@ style:
 	$(PYTHON) -m isort src/
 	$(PYTHON) -m black src/
 	$(PYTHON) -m autoflake --config=pyproject.toml --recursive src/
-	

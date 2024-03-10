@@ -1,28 +1,29 @@
-# ---
-# Build backend
-# ---
-poetry
 
 # ---
-# Documentation
-# ---
-mkdocs
-mkdocstrings-python
-
-# ---
-# Linting, typing and code style 
+# Linting, typing and code style
 # ---
 autoflake
 black
-isort
-mypy
-lxml
-pylint
 
 
 # ---
 # Testing and coverage
 # ---
 coverage
+isort
+lxml
+
+# ---
+# Documentation
+# ---
+mkdocs
+mkdocstrings-python
+mypy
+# ---
+# Build backend
+# ---
+poetry
+pre-commit
+pylint
 pytest
 pytest-dependency
