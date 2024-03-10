@@ -5,3 +5,4 @@ coverage.json
 **/__pycache__/
 /site
 /dist
+/mypy_report

@@ -10,6 +10,17 @@ mkdocs
 mkdocstrings-python
 
 # ---
+# Linting, typing and code style 
+# ---
+autoflake
+black
+isort
+mypy
+lxml
+pylint
+
+
+# ---
 # Testing and coverage
 # ---
 coverage

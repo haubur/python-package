@@ -2,12 +2,13 @@
 Document module.
 """
 
+
 def fibonacci(index: int) -> int:
     """
     Document function.
     """
 
-    result = None
+    result = -1
 
     if index == 0:
         result = 0
@@ -18,14 +19,16 @@ def fibonacci(index: int) -> int:
 
     return result
 
+
 def main() -> None:
     """
     Document function.
     """
 
-    for index in range(0,10):
+    for index in range(0, 10):
         template = "fibonacci({index}) = {result}"
-        print(template.format(index = index, result = fibonacci(index)))
+        print(template.format(index=index, result=fibonacci(index)))
+
 
 if __name__ == "__main__":
     main()

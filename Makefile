@@ -42,3 +42,18 @@ test:
 	$(PYTHON) -m coverage run -m pytest tests/
 	$(PYTHON) -m coverage report && \
 	$(PYTHON) -m coverage json
+
+linting:
+	@echo "Running linting ..."
+	$(PYTHON) -m pylint --rcfile=pyproject.toml src/
+
+typing:
+	@echo "Type checking ..."
+	$(PYTHON) -m mypy --config-file=pyproject.toml src/
+
+style:
+	@echo "Auto-checking code style ..."
+	$(PYTHON) -m isort src/
+	$(PYTHON) -m black src/
+	$(PYTHON) -m autoflake --config=pyproject.toml --recursive src/
+	

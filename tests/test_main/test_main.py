@@ -11,7 +11,7 @@ class TestMainOperations(object):
         Document test.
         """
 
-        assert fibonacci(-99) is None
+        assert fibonacci(-99) == -1
         assert fibonacci(9) == 34
 
     @pytest.mark.dependency(

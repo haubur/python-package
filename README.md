@@ -7,12 +7,17 @@ A modern python package template with professional grade best practices.
 	- poetry (chosen to replace make if desired)
 - [x] Build tool
 	- make
-- [x]Dependency management
+- [x] Dependency management
 	- venv
 	- requirements.txt
-- [ ] Linters
-- [ ] Typing
-- [ ] Auto-formatters
+- [x] Linters
+	- pylint
+- [x] Typing
+	- mypy
+- [x] Auto-formatters
+	- isort
+	- autoflake
+	- Black
 - [x] Documentation
 	- MkDocs/MkDocstrings
 - [ ] Changelog
@@ -24,6 +29,10 @@ A modern python package template with professional grade best practices.
 - [ ] LICENSE
 	- [Choose a license](https://choosealicense.com/)
 - [ ] Logging
+- [x] Typing
+	- [Static typing with python](https://typing.readthedocs.io/en/latest/)
+	- [Python type system](https://typing.readthedocs.io/en/latest/spec/index.html)
+	- [mypy](https://github.com/python/mypy)
 
 ## Infrastructure
 - Ansible
