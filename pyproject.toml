@@ -6,19 +6,17 @@ authors = ["First Last <example@example.com>"]
 readme = "README.md"
 packages = [{include = "src"}]
 license = "Apache-2.0"
-homepage = "Add URL of package homepage."
-documentation = "Add URL of package documentation homepage."
-repository = "Add github URL to repository."
 include = ["CHANGELOG.md"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+numpy = "*"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "*"
 ruff = "*"
 pytest = "*"
 pytest-dependency = "*"
+pytest-cov = "*"
 pre-commit = "*"
 
 [tool.poetry.group.docs.dependencies]
